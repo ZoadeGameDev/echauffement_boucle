@@ -60,12 +60,21 @@ int main() {
     // }
 
     // Exercice 1.5 -----
-    int rebours = 10;
-    while (rebours >= 0) {
-        std::println("{}", rebours);
-        rebours = rebours - 1;
-    }
-    std::println("Decollage");
+    // int rebours = 10;
+    // while (rebours >= 0) {
+    //     std::println("{}", rebours);
+    //     rebours = rebours - 1;
+    // }
+    // std::println("Decollage");
+
+    // Exercice 1.6 -----
+    int choix = 0;
+    do {
+        std::println("Choisissez entre 1 et 3 :");
+        std::cin >> choix;
+    } while (choix > 3 || choix < 1);
+    std::println("Merci");
+
 
 
     return 0;
