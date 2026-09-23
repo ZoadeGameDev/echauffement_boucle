@@ -3,7 +3,7 @@
 
 int main() {
 
-    // Exercice 1.1 ----
+    // Exercice 1.1 ------
     int pv = 42;
     if (pv <= 0) {
         std::println("Game Over");
