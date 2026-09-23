@@ -76,11 +76,28 @@ int main() {
     // std::println("Merci");
 
     // Exercice 1.7 ----
-    for (int i = 1; i <= 10; i++) {
-        std::println("7 x {0} = {1}", i, i * 7);
+    // for (int i = 1; i <= 10; i++) {
+    //     std::println("7 x {0} = {1}", i, i * 7);
+    // }
+    // for (int i = 10; i >= 1; i--) {
+    //     std::println("7 x {0} = {1}", i, i * 7);
+    // }
+
+    // Exercice 1.8 -----
+    std::println(" ----- LOOP: 1-100 but i hate multiples of 17 ----");
+    for (int i = 1; i <= 100; i++) {
+        std::println("number {}", i);
+        if ((i % 17 == 0)) {
+            std::println("A MULTIPLE OF 17 WAS DETECTED, DESTROY EVERYTHING!!!!");
+            break;
+        }
     }
-    for (int i = 10; i >= 1; i--) {
-        std::println("7 x {0} = {1}", i, i * 7);
+    std::println(" ----- LOOP: 1-30 but i don't tolerate multiples of 3 ----");
+    for (int i = 1; i <= 30; i++) {
+        if ((i % 3 == 0)) {
+            continue;
+        }
+        std::println("number {}", i);
     }
 
 
