@@ -68,12 +68,21 @@ int main() {
     // std::println("Decollage");
 
     // Exercice 1.6 -----
-    int choix = 0;
-    do {
-        std::println("Choisissez entre 1 et 3 :");
-        std::cin >> choix;
-    } while (choix > 3 || choix < 1);
-    std::println("Merci");
+    // int choix = 0;
+    // do {
+    //     std::println("Choisissez entre 1 et 3 :");
+    //     std::cin >> choix;
+    // } while (choix > 3 || choix < 1);
+    // std::println("Merci");
+
+    // Exercice 1.7 ----
+    for (int i = 1; i <= 10; i++) {
+        std::println("7 x {0} = {1}", i, i * 7);
+    }
+    for (int i = 10; i >= 1; i--) {
+        std::println("7 x {0} = {1}", i, i * 7);
+    }
+
 
 
 
