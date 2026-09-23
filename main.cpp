@@ -37,28 +37,35 @@ int main() {
     // }
 
     // Exercice 1.4 -----
-    char single_char;
-    std::cin >> single_char;
+    // char single_char;
+    // std::cin >> single_char;
+    //
+    // switch (single_char) {
+    //     case 'z':
+    //         std::println("Avancer");
+    //         break;
+    //     case 's':
+    //         std::println("Reculer");
+    //         break;
+    //     case 'a': // ma configuration clavier proposerait le 'a' pour la gauche
+    //     case 'q': // mais comme ca, on a le 'q' aussi
+    //         std::println("Gauche");
+    //         break;
+    //         case 'd':
+    //         std::println("Droite");
+    //         break;
+    //     default:
+    //         std::println("Touche inconnue");
+    //         break;
+    // }
 
-    switch (single_char) {
-        case 'z':
-            std::println("Avancer");
-            break;
-        case 's':
-            std::println("Reculer");
-            break;
-        case 'a': // ma configuration clavier proposerait le 'a' pour la gauche
-        case 'q': // mais comme ca, on a le 'q' aussi
-            std::println("Gauche");
-            break;
-            case 'd':
-            std::println("Droite");
-            break;
-        default:
-            std::println("Touche inconnue");
-            break;
-
+    // Exercice 1.5 -----
+    int rebours = 10;
+    while (rebours >= 0) {
+        std::println("{}", rebours);
+        rebours = rebours - 1;
     }
+    std::println("Decollage");
 
 
     return 0;
