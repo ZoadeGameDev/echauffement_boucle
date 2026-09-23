@@ -84,20 +84,33 @@ int main() {
     // }
 
     // Exercice 1.8 -----
-    std::println(" ----- LOOP: 1-100 but i hate multiples of 17 ----");
-    for (int i = 1; i <= 100; i++) {
-        std::println("number {}", i);
-        if ((i % 17 == 0)) {
-            std::println("A MULTIPLE OF 17 WAS DETECTED, DESTROY EVERYTHING!!!!");
-            break;
-        }
-    }
-    std::println(" ----- LOOP: 1-30 but i don't tolerate multiples of 3 ----");
+    // std::println(" ----- LOOP: 1-100 but i hate multiples of 17 ----");
+    // for (int i = 1; i <= 100; i++) {
+    //     std::println("number {}", i);
+    //     if ((i % 17 == 0)) {
+    //         std::println("A MULTIPLE OF 17 WAS DETECTED, DESTROY EVERYTHING!!!!");
+    //         break;
+    //     }
+    // }
+    // std::println(" ----- LOOP: 1-30 but i don't tolerate multiples of 3 ----");
+    // for (int i = 1; i <= 30; i++) {
+    //     if ((i % 3 == 0)) {
+    //         continue;
+    //     }
+    //     std::println("number {}", i);
+    // }
+
+    // Exercice 1.9 -----
     for (int i = 1; i <= 30; i++) {
-        if ((i % 3 == 0)) {
-            continue;
+        if ((i % 3 == 0) && (i % 5 == 0)) {
+            std::println("FizzBuzz");
+        } else if ((i % 3 == 0)) {
+            std::println("Fizz");
+        } else if ((i % 5 == 0)) {
+            std::println("Buzz");
+        } else {
+            std::println("{}", i);
         }
-        std::println("number {}", i);
     }
 
 
